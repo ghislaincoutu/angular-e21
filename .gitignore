@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Publication files, full version.
+/related_files/publication/*.tar.gz
