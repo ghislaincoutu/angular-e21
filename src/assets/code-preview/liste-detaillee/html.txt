@@ -1,0 +1,69 @@
+<div class="description">
+  <h2>Vue liste détaillée</h2>
+  <p>Affichage des fiches grammaticales, vue détaillée</p>
+</div>
+
+<form class="controls02">
+  <div class="row01 col04">
+    <div class="group01">
+      <label>Catégories</label>
+      <select [(ngModel)]="categoryModel" (change)="selectCategory()" [ngModelOptions]="{standalone: true}">
+        <option value="all">Toutes les catégories</option>
+        <option *ngFor="let x of categoryName">{{ x }}</option>
+      </select>
+    </div>
+    <div class="group01">
+      <label>Cours</label>
+      <select [(ngModel)]="courseModel" (change)="selectCourse()" [ngModelOptions]="{standalone: true}">
+        <option value="all">Tous les cours</option>
+        <option *ngFor="let x of courseID">{{ x }}</option>
+      </select>
+    </div>
+    <div class="group01">
+      <label>Modules</label>
+      <select disabled>
+        <option value="all">Tous les modules</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+      </select>
+    </div>
+    <div class="group01">
+      <label>Activités</label>
+      <select disabled>
+        <option value="all">Toutes les activités</option>
+        <option value="A01">A01</option>
+        <option value="A02">A02</option>
+        <option value="A03">A03</option>
+        <option value="A04">A04</option>
+        <option value="A05">A05</option>
+        <option value="A06">A06</option>
+      </select>
+    </div>
+  </div>
+  <div class="row01 col02">
+    <div class="group01">
+      <label for="search-box">Recherche</label>
+      <input #searchBox id="search-box" [(ngModel)]="filterTerm" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="group01">
+    </div>
+  </div>
+</form>
+
+<div *ngFor="let x of dataList01 | filter:filterTerm">
+  <p class="id01">{{ x.id }}</p>
+  <div class="external-file">
+    <div [innerHTML]="x.document39 | async | safe: 'html'"></div>
+  </div>
+</div>
+
+<div class="description spacet01">
+  <h3>liste-detaillee.component.html</h3>
+  <iframe src="assets/code-preview/liste-detaillee/html.txt"></iframe>
+  <h3>liste-detaillee.component.ts</h3>
+  <iframe src="assets/code-preview/liste-detaillee/typescript.txt"></iframe>
+  <h3>module01.service.ts</h3>
+  <iframe src="assets/code-preview/module01/typescript.txt"></iframe>
+  <h3>safe.pipe.ts</h3>
+  <iframe src="assets/code-preview/safe/typescript.txt"></iframe>
+</div>

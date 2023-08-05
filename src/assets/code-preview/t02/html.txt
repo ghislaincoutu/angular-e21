@@ -1,0 +1,66 @@
+<div class="description">
+  <h2>Vue liste sommaire</h2>
+  <p>Affichage des fiches grammaticales, vue sommaire (T02)</p>
+</div>
+
+<form class="controls02">
+  <div class="row01 col04">
+    <div class="group01">
+      <label>Toutes les catégories</label>
+      <select [(ngModel)]="categoryModel" (change)="selectCategory()" [ngModelOptions]="{standalone: true}">
+        <option value="all">Toutes les catégories</option>
+        <option *ngFor="let x of categoryName">{{ x }}</option>
+      </select>
+    </div>
+    <div class="group01">
+      <label>Tous les cours</label>
+      <select [(ngModel)]="courseModel" (change)="selectCourse()" [ngModelOptions]="{standalone: true}">
+        <option value="all">Tous les cours</option>
+        <option *ngFor="let x of courseID">{{ x }}</option>
+      </select>
+    </div>
+    <div class="group01">
+      <label>Tous les modules</label>
+      <select disabled>
+        <option value="">Tous les modules</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+      </select>
+    </div>
+    <div class="group01">
+      <label>Toutes les activités</label>
+      <select disabled>
+        <option value="">Toutes les activités</option>
+        <option value="A01">A01</option>
+        <option value="A02">A02</option>
+        <option value="A03">A03</option>
+        <option value="A04">A04</option>
+        <option value="A05">A05</option>
+        <option value="A06">A06</option>
+      </select>
+    </div>
+  </div>
+  <div class="row01 col02">
+    <div class="group01">
+      <label for="search-box">Recherche</label>
+      <input #searchBox id="search-box" [(ngModel)]="filterTerm" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="group01">
+    </div>
+  </div>
+</form>
+
+<ul *ngIf="data39">
+  <li *ngFor="let x of data39 | filter:filterTerm">
+    {{ x.id }}
+  </li>
+</ul>
+
+<div class="description spacet01">
+  <h3>t02.component.html</h3>
+  <iframe src="assets/code-preview/t02/html.txt"></iframe>
+  <h3>t02.component.ts</h3>
+  <iframe src="assets/code-preview/t02/typescript.txt"></iframe>
+  <h3>module03.service.ts</h3>
+  <iframe src="assets/code-preview/module03/typescript.txt"></iframe>
+</div>
