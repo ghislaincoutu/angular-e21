@@ -3,6 +3,7 @@ Les fichiers se rapportant à l'application qui doivent être installés sur le 
 
 ## Commandes Angular à exécuter pour générer les composants de l'application
 ```sh
+ng generate environments
 ng generate component accueil
 ng generate component menu
 ng generate component liste-sommaire
