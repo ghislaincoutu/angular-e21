@@ -1,0 +1,83 @@
+input, button, select {
+  -webkit-appearance: none;
+  padding: 5px 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
+.controls {
+  padding: 10px;
+  background-color: #ccc;
+  label {
+    display: block;
+    margin: 0 0 4px 2px;
+  }
+}
+.controls02 {
+  margin: 0 0 30px 0;
+  padding: 10px 10px 0 10px;
+  background-color: #eee;
+  label {
+    display: block;
+    margin: 0 0 6px 0;
+  }
+  select {
+    margin-bottom: 10px;
+    padding: 3px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+.button01 {
+  margin: 10px 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: darkmagenta;
+  border: none;
+  &:hover {
+    background-color: black;
+  }
+}
+
+// Adaptation des styles pour les écrans plus larges que 500 pixels.
+@media (min-width: 500px) {
+  .controls02 {
+    .row01 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .col02 .group01 {
+      width: 49.5%;
+    }
+    .col04 .group01 {
+      width: 49.5%;
+    }
+  }
+}
+// Adaptation des styles pour les écrans plus larges que 600 pixels.
+@media (min-width: 600px) {}
+// Adaptation des styles pour les écrans plus larges que 800 pixels.
+@media (min-width: 800px) {
+  .controls02 {
+    .col02 .group01 {
+      width: 49.5%;
+    }
+    .col04 .group01 {
+      width: 24.5%;
+    }
+  }
+}

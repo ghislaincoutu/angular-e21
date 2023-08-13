@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import "styles/layout.scss";
+@import "styles/texts.scss";
+@import "styles/forms.scss";
+
+.description {
+  padding: 10px;
+  color: #fff;
+  background-color: darkmagenta;
+  &:first-child {
+    margin-bottom: 10px;
+  }
+  h2 {
+    margin: 0 0 6px 0;
+  }
+  h3 {
+    margin: 12px 0 6px 0;
+    color: #fff;
+    font-weight: normal;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  iframe {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border: none;
+    opacity: .7;
+  }
+}
+.id01 {
+  margin: 0;
+  padding: 5px;
+  color: darkmagenta;
+  background-color: #eee;
+}
+.external-file {
+  margin: 0 0 20px 0;
+}
+.spacet01 {
+  margin-top: 100px;
+}

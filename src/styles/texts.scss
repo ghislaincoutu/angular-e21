@@ -1,0 +1,45 @@
+h1 {
+  margin: 0 0 4px 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+h1 {
+  margin: 0 0 4px 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+h2 {
+  margin: 12px 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+h3 {
+  margin: 12px 0 6px 0;
+  font-size: 1.3rem;
+  color: darkmagenta;
+}
+p {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+p.subtitle {
+  margin: 0 0 6px 0;
+  color: darkmagenta;
+  font-size: 1.3rem;
+}
+a {
+  color: #009;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.list01 {
+  li {
+    margin: 3px 0;
+  }
+  span {
+    color: #666;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
