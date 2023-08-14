@@ -11,6 +11,7 @@ import { ListeSommaireComponent } from './liste-sommaire/liste-sommaire.componen
 import { ListeDetailleeComponent } from './liste-detaillee/liste-detaillee.component';
 import { T01Component } from './t01/t01.component';
 import { T02Component } from './t02/t02.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { T02Component } from './t02/t02.component';
     ListeSommaireComponent,
     ListeDetailleeComponent,
     T01Component,
-    T02Component
+    T02Component,
+    SafePipe
   ],
   imports: [
     BrowserModule,
