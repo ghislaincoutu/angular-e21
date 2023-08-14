@@ -43,7 +43,7 @@
   <div class="row01 col02">
     <div class="group01">
       <label for="search-box">Recherche</label>
-      <input #searchBox id="search-box" [(ngModel)]="filterTerm" [ngModelOptions]="{standalone: true}">
+      <input #searchBox id="search-box" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}">
     </div>
     <div class="group01">
     </div>
@@ -51,7 +51,7 @@
 </form>
 
 <ul *ngIf="dataList01" class="list01">
-  <li *ngFor="let x of dataList01">
+  <li *ngFor="let x of dataList01 | transform02: searchText">
     <span>{{ x.id }}</span> &ndash; <a href="fiche.php?id={{ x.id }}">{{ x.title }}</a>
   </li>
 </ul>
@@ -63,4 +63,6 @@
   <iframe src="assets/code-preview/liste-sommaire/typescript.txt"></iframe>
   <h3>module01.service.ts</h3>
   <iframe src="assets/code-preview/module01/typescript.txt"></iframe>
+  <h3>transform02.pipe.ts</h3>
+  <iframe src="assets/code-preview/transform02/typescript.txt"></iframe>
 </div>

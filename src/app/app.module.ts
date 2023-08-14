@@ -12,6 +12,7 @@ import { ListeDetailleeComponent } from './liste-detaillee/liste-detaillee.compo
 import { T01Component } from './t01/t01.component';
 import { T02Component } from './t02/t02.component';
 import { SafePipe } from './safe.pipe';
+import { Transform02Pipe } from './transform02.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SafePipe } from './safe.pipe';
     ListeDetailleeComponent,
     T01Component,
     T02Component,
-    SafePipe
+    SafePipe,
+    Transform02Pipe
   ],
   imports: [
     BrowserModule,

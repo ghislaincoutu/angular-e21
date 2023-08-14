@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Module01Service } from '../module01.service';
 
 @Component({
@@ -7,14 +7,16 @@ import { Module01Service } from '../module01.service';
   styleUrls: ['./liste-sommaire.component.scss']
 })
 export class ListeSommaireComponent {
+  @ViewChild('searchbar') searchbar = ElementRef;
+
   dataList01 = [] as any;
   dataList02 = [] as any;
   categoryName = [] as any;
   courseID = [] as any;
-  filterTerm: string = '';
+  searchText: string = '';
 
   constructor(private module01: Module01Service) {
-    this.filterTerm = '';
+    this.searchText = '';
   }
 
   ngOnInit(): void {

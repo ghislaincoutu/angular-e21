@@ -14,6 +14,7 @@ ng generate service module01
 ng generate service module02
 ng generate service module03
 ng generate pipe safe
+ng generate pipe transform02
 ```
 
 ## Ajout d'un fichier JavaScript externe à l'application
