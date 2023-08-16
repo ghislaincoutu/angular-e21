@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Module01Service, Data39 } from '../module01.service';
 import { environment } from './../../environments/environment';
@@ -9,6 +9,8 @@ import { environment } from './../../environments/environment';
   styleUrls: ['./liste-detaillee.component.scss']
 })
 export class ListeDetailleeComponent {
+  @ViewChild('searchbar') searchbar = ElementRef;
+
   envTitle = environment.envTitle;
   envURL = environment.envURL;
   envJSON = environment.envJSON;
@@ -17,12 +19,12 @@ export class ListeDetailleeComponent {
   dataList02!: Data39[];
   categoryName = [] as any;
   courseID = [] as any;
-  filterTerm: string = '';
+  searchText: string = '';
 
   constructor(
     public http39: HttpClient,
     private module01: Module01Service) {
-    this.filterTerm = '';
+    this.searchText = '';
   }
 
   private getHTMLFile(document85: string) {
