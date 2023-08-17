@@ -50,11 +50,10 @@
   </div>
 </form>
 
-<div *ngFor="let x of dataList01">
+<div *ngFor="let x of dataList01 | transform02: searchText">
   <p class="id01">{{ x.id }}</p>
   <div class="external-file">
     <div [innerHTML]="x.document39 | async | safe: 'html'"></div>
-    <!-- <div [innerHTML]="x.document39 | async | transform02: searchText | safe: 'html'"></div> -->
   </div>
 </div>
 
@@ -67,4 +66,6 @@
   <iframe src="assets/code-preview/module01/typescript.txt"></iframe>
   <h3>safe.pipe.ts</h3>
   <iframe src="assets/code-preview/safe/typescript.txt"></iframe>
+  <h3>transform02.pipe.ts</h3>
+  <iframe src="assets/code-preview/transform02/typescript.txt"></iframe>
 </div>
