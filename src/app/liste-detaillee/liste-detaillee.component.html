@@ -54,6 +54,7 @@
   <p class="id01">{{ x.id }}</p>
   <div class="external-file">
     <div [innerHTML]="x.document39 | async | safe: 'html'"></div>
+    <!-- <div [innerHTML]="x.document39 | async | transform02: searchText | safe: 'html'"></div> -->
   </div>
 </div>
 
