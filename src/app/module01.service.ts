@@ -28,6 +28,12 @@ export class Module01Service {
   envURL = environment.envURL;
   envJSON = environment.envJSON;
 
+  constructor(private http20: HttpClient) { }
+
+  getData39(): Observable<Data39[]> {
+    return this.http20.get<Data39[]>(this.envURL + "/json/" + this.envJSON).pipe(delay(500));
+  }
+
   categoryName = [
     "Aide à la rédaction",
     "Français parlé au Québec",
@@ -48,11 +54,5 @@ export class Module01Service {
     "GSA",
     "SSI"
   ];
-
-  constructor(private http20: HttpClient) { }
-
-  getData39(): Observable<Data39[]> {
-    return this.http20.get<Data39[]>(this.envURL + "/json/" + this.envJSON).pipe(delay(500));
-  }
 
 }

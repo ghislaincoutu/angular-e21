@@ -1,6 +1,6 @@
 <div class="description">
   <h2>Vue liste sommaire</h2>
-  <p>Affichage des fiches grammaticales, vue sommaire (T02)</p>
+  <p>Affichage des fiches grammaticales, vue sommaire (T02) &mdash; Test sans l'utilisation d'un objet Observable.</p>
 </div>
 
 <form class="controls02">
@@ -51,7 +51,7 @@
 </form>
 
 <ul *ngIf="data39">
-  <li *ngFor="let x of data39">
+  <li *ngFor="let x of data39 | transform02: searchText">
     {{ x.id }}
   </li>
 </ul>
