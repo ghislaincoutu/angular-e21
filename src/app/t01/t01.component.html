@@ -43,8 +43,7 @@
   <div class="row01 col02">
     <div class="group01">
       <label for="search-box">Recherche</label>
-      <!-- <input #searchBox id="search-box" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}"> -->
-      <input #searchBox id="search-box">
+      <input #searchBox id="search-box" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}">
     </div>
     <div class="group01">
     </div>
@@ -52,6 +51,7 @@
 </form>
 
 <ul *ngIf="data39">
+  <!-- Le pipe "| transform02:searchText" ne fontionne pas avec le pipe "| async" -->
   <li *ngFor="let x of data39 | async">
     {{ x.id }}
   </li>
