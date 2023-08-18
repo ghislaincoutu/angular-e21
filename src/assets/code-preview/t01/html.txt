@@ -51,8 +51,7 @@
 </form>
 
 <ul *ngIf="data39">
-  <!-- Le pipe "| transform02:searchText" ne fontionne pas avec le pipe "| async" -->
-  <li *ngFor="let x of data39 | async">
+  <li *ngFor="let x of (data39 | async)! | transform02: searchText">
     {{ x.id }}
   </li>
 </ul>
