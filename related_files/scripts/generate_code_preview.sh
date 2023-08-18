@@ -19,8 +19,8 @@ mv $de/module02/module02.service.ts $de/module02/typescript.txt
 cp $so/module03.service.ts $de/module03/
 mv $de/module03/module03.service.ts $de/module03/typescript.txt
 
-cp $so/safe.pipe.ts $de/safe/
-mv $de/safe/safe.pipe.ts $de/safe/typescript.txt
+cp $so/transform01.pipe.ts $de/transform01/
+mv $de/transform01/transform01.pipe.ts $de/transform01/typescript.txt
 
 cp $so/transform02.pipe.ts $de/transform02/
 mv $de/transform02/transform02.pipe.ts $de/transform02/typescript.txt

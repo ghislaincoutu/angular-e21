@@ -112,7 +112,7 @@ $file21 = $_GET['id'];
     <header>
       <h1>Fiches grammaticales (test 1)</h1>
       <p class="subtitle">Test de programmation avec Angular 16</p>
-      <p>Version du 2023-08-13</p>
+      <p>Version du 2023-08-17</p>
     </header>
     <nav>
       <a href="accueil">Accueil</a> |

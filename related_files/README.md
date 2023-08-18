@@ -13,7 +13,7 @@ ng generate component t02
 ng generate service module01
 ng generate service module02
 ng generate service module03
-ng generate pipe safe
+ng generate pipe transform01
 ng generate pipe transform02
 ```
 

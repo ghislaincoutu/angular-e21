@@ -1,5 +1,4 @@
-import { ConditionalExpr } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Module03Service } from '../module03.service';
 
 @Component({
@@ -9,13 +8,15 @@ import { Module03Service } from '../module03.service';
   providers: [Module03Service]
 })
 export class T02Component {
+  @ViewChild('searchbar') searchbar = ElementRef;
+
   data39 = [] as any;
   categoryName = [] as any;
   courseID = [] as any;
-  filterTerm: string = '';
+  searchText: string = '';
 
   constructor(private module03: Module03Service) {
-    this.filterTerm = '';
+    this.searchText = '';
   }
 
   ngOnInit(): void {

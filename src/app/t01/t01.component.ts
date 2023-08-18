@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Module02Service } from '../module02.service';
 
 @Component({
@@ -8,13 +8,15 @@ import { Module02Service } from '../module02.service';
   providers: [Module02Service]
 })
 export class T01Component {
+  @ViewChild('searchbar') searchbar = ElementRef;
+
   data39 = [] as any;
   categoryName = [] as any;
   courseID = [] as any;
-  filterTerm: string = '';
+  searchText: string = '';
 
   constructor(private module02: Module02Service) { 
-    this.filterTerm = '';
+    this.searchText = '';
   }
 
   ngOnInit(): void {

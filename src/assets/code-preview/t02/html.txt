@@ -43,7 +43,7 @@
   <div class="row01 col02">
     <div class="group01">
       <label for="search-box">Recherche</label>
-      <input #searchBox id="search-box" [(ngModel)]="filterTerm" [ngModelOptions]="{standalone: true}">
+      <input #searchBox id="search-box" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}">
     </div>
     <div class="group01">
     </div>
