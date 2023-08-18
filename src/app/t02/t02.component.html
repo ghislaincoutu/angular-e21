@@ -51,7 +51,7 @@
 </form>
 
 <ul *ngIf="data39">
-  <li *ngFor="let x of data39">
+  <li *ngFor="let x of data39 | transform02: searchText">
     {{ x.id }}
   </li>
 </ul>
