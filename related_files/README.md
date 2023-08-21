@@ -1,4 +1,6 @@
 # angular-e21 &mdash; Test de programmation de fiches grammaticales
+[README](../README.md)
+
 Les fichiers se rapportant à l'application qui doivent être installés sur le serveur Web se trouvent dans le sous-répertoire `/releated_files/publication`.
 
 ## Démonstration
