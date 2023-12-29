@@ -111,8 +111,8 @@ $file21 = $_GET['id'];
   <div class="container">
     <header>
       <h1>Fiches grammaticales (test 1)</h1>
-      <p class="subtitle">Test de programmation avec Angular 16</p>
-      <p>Version du 2023-08-17</p>
+      <p class="subtitle">Test de programmation avec Angular 17</p>
+      <p>Version du 2023-12-28</p>
     </header>
     <nav>
       <a href="accueil">Accueil</a> |
