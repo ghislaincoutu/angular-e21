@@ -5,7 +5,7 @@ $file21 = $_GET['id'];
 <html lang="fr">
 
 <head>
-  <base href="/r002/angular-e21/">
+  <base href="/d002/angular-e21/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">

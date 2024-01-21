@@ -5,7 +5,7 @@ function apply_pause() {
 echo "Copie de sécurité des fichiers relatifs à l'application angular-e21"
 apply_pause "Appuyer sur la touche [Retour] pour continuer..."
 
-source=/var/www/html/r002/angular-e21
+source=/var/www/html/d002/angular-e21
 destination=/home/Exercises/angular-e21/related_files/publication
 rm $destination/*.tar.gz
 tar -czvf $destination/pub_angular-e21_`(date +%Y%m%d-%H%M)`.tar.gz $source/

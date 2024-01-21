@@ -9,9 +9,9 @@ apply_pause "Appuyer sur la touche [Retour] pour continuer..."
 # Find & Replace in Multiple Files
 # grep -rl "old_string" . | xargs sed -i 's/old_string/new_string/g'
 
-path01=https:\/\/172.17.0.1:2443\/r002\/angular-e21\/
-path02=\/r002\/angular-e21\/
-source=/var/www/html/r002/angular-e21
+path01=https:\/\/172.17.0.1:2443\/d002\/angular-e21\/
+path02=\/d002\/angular-e21\/
+source=/var/www/html/d002/angular-e21
 
 PS3='Sélectionner l’aménagement requis pour afficher tous les contenus (Développement ou Publication): '
 options=("Développement" "Publication" "Quitter")
