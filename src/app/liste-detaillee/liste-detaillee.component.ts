@@ -4,9 +4,10 @@ import { Module01Service, Data39 } from '../module01.service';
 import { environment } from './../../environments/environment';
 
 @Component({
-  selector: 'app-liste-detaillee',
-  templateUrl: './liste-detaillee.component.html',
-  styleUrls: ['./liste-detaillee.component.scss']
+    selector: 'app-liste-detaillee',
+    templateUrl: './liste-detaillee.component.html',
+    styleUrls: ['./liste-detaillee.component.scss'],
+    standalone: false
 })
 export class ListeDetailleeComponent {
   @ViewChild('searchbar') searchbar = ElementRef;

@@ -3,9 +3,10 @@ import { environment } from './../../environments/environment';
 declare const playSound: any;
 
 @Component({
-  selector: 'app-accueil',
-  templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.scss']
+    selector: 'app-accueil',
+    templateUrl: './accueil.component.html',
+    styleUrls: ['./accueil.component.scss'],
+    standalone: false
 })
 export class AccueilComponent {
   envTitle = environment.envTitle;

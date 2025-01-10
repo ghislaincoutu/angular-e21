@@ -2,9 +2,10 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Module01Service } from '../module01.service';
 
 @Component({
-  selector: 'app-liste-sommaire',
-  templateUrl: './liste-sommaire.component.html',
-  styleUrls: ['./liste-sommaire.component.scss']
+    selector: 'app-liste-sommaire',
+    templateUrl: './liste-sommaire.component.html',
+    styleUrls: ['./liste-sommaire.component.scss'],
+    standalone: false
 })
 export class ListeSommaireComponent {
   @ViewChild('searchbar') searchbar = ElementRef;
