@@ -1,7 +1,7 @@
 # angular-e21
 [README](related_files/README.md) &mdash; Other files related to this programming exercise.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
 .
 
 ## Development server

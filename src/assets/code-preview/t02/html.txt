@@ -9,14 +9,18 @@
       <label>Toutes les catégories</label>
       <select [(ngModel)]="categoryModel" (change)="selectCategory()" [ngModelOptions]="{standalone: true}">
         <option value="all">Toutes les catégories</option>
-        <option *ngFor="let x of categoryName">{{ x }}</option>
+        @for (x of categoryName; track x) {
+          <option>{{ x }}</option>
+        }
       </select>
     </div>
     <div class="group01">
       <label>Tous les cours</label>
       <select [(ngModel)]="courseModel" (change)="selectCourse()" [ngModelOptions]="{standalone: true}">
         <option value="all">Tous les cours</option>
-        <option *ngFor="let x of courseID">{{ x }}</option>
+        @for (x of courseID; track x) {
+          <option>{{ x }}</option>
+        }
       </select>
     </div>
     <div class="group01">
@@ -50,11 +54,15 @@
   </div>
 </form>
 
-<ul *ngIf="data39">
-  <li *ngFor="let x of data39 | transform02: searchText">
-    {{ x.id }}
-  </li>
-</ul>
+@if (data39) {
+  <ul>
+    @for (x of data39 | transform02: searchText; track x) {
+      <li>
+        {{ x.id }}
+      </li>
+    }
+  </ul>
+}
 
 <div class="description spacet01">
   <h3>t02.component.html</h3>
