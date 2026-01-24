@@ -9,14 +9,18 @@
       <label>Catégories</label>
       <select [(ngModel)]="categoryModel" (change)="selectCategory()" [ngModelOptions]="{standalone: true}">
         <option value="all">Toutes les catégories</option>
-        <option *ngFor="let x of categoryName">{{ x }}</option>
+        @for (x of categoryName; track x) {
+          <option>{{ x }}</option>
+        }
       </select>
     </div>
     <div class="group01">
       <label>Cours</label>
       <select [(ngModel)]="courseModel" (change)="selectCourse()" [ngModelOptions]="{standalone: true}">
         <option value="all">Tous les cours</option>
-        <option *ngFor="let x of courseID">{{ x }}</option>
+        @for (x of courseID; track x) {
+          <option>{{ x }}</option>
+        }
       </select>
     </div>
     <div class="group01">
@@ -50,12 +54,14 @@
   </div>
 </form>
 
-<div *ngFor="let x of dataList01 | transform02: searchText">
-  <p class="id01">{{ x.id }}</p>
-  <div class="external-file">
-    <div [innerHTML]="x.document39 | async | transform01: 'html'"></div>
+@for (x of dataList01 | transform02: searchText; track x) {
+  <div>
+    <p class="id01">{{ x.id }}</p>
+    <div class="external-file">
+      <div [innerHTML]="x.document39 | async | transform01: 'html'"></div>
+    </div>
   </div>
-</div>
+}
 
 <div class="description spacet01">
   <h3>liste-detaillee.component.html</h3>
