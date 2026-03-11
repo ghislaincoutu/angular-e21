@@ -6,9 +6,9 @@ echo "Copie du code HTML et TypeScript dans les fichiers code-preview"
 apply_pause "Appuyer sur la touche [Retour] pour continuer..."
 
 # Source (so)
-so=/home/xd21/angular-e21/src/app
+so=/home/XD01/angular-e21/src/app
 # Destination (de)
-de=/home/xd21/angular-e21/src/assets/code-preview/
+de=/home/XD01/angular-e21/src/assets/code-preview/
 
 cp $so/module01.service.ts $de/module01/
 mv $de/module01/module01.service.ts $de/module01/typescript.txt
