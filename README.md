@@ -1,7 +1,7 @@
 # angular-e21 &mdash; Test de programmation de fiches grammaticales
 <img src="related-files/medias/angular-e21.png" alt="Aperçu de l’interface" style="max-width:1000px;">
 
-Les fichiers se rapportant à l'application qui doivent être installés sur le serveur Web se trouvent dans le sous-répertoire `/releated_files/publication`.
+Les fichiers se rapportant à l'application qui doivent être installés sur le serveur Web se trouvent dans le sous-répertoire `/releated-files/publication`.
 
 ## Démonstration
 https://ghislaincoutu.ca/d002/angular-e21
